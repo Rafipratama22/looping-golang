@@ -78,8 +78,8 @@ func main() {
 		},
 	}
 	args := os.Args
-	indexArgs := args[1:]
-	index, _ := strconv.Atoi(indexArgs[0])
+	indexArgs := args[1]
+	index, _ := strconv.Atoi(indexArgs)
 	for i, student := range students {
 		if i == index - 1 {
 			fmt.Println(student)
