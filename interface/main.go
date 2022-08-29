@@ -14,6 +14,6 @@ func main() {
 	fmt.Println(add)
 	get := res.Get()
 	for _, each := range get {
-		fmt.Println(each)
+		fmt.Println(each.Nama)
 	}
 }

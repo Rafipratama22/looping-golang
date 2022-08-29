@@ -21,7 +21,7 @@ func NewUserService(user []User) UserIface {
 
 func (u *UserService) Register(user *User) string {
 	u.ListUser = append(u.ListUser, *user)
-	return user.Nama + "berhasil didaftarkan"
+	return user.Nama + " berhasil didaftarkan"
 }
 
 func (u *UserService) Get() []User {
